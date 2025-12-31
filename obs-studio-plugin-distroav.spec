@@ -1,6 +1,6 @@
 Name:           obs-studio-plugin-distroav
 Version:        6.1.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Network Audio/Video in OBS-Studio using NDI technology
 
 License:        GPL-2.0-or-later
@@ -69,5 +69,8 @@ sed -i -e 's/ -Werror$//' %{__cmake_builddir}/CMakeFiles/distroav.dir/flags.make
 
 
 %changelog
+* Wed Dec 31 2025 Sérgio Basto <sergio@serjux.com> - 6.1.1-2
+- Initial commit for nvidia-settings-580xx
+
 * Mon Jun 23 2025 Nicolas Chauvet <kwizart@gmail.com> - 6.1.1-1
 - Initial spec file
