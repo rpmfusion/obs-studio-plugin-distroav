@@ -49,9 +49,6 @@ sed -i -e 's|/usr/local/lib|/usr/local/%{_lib}|' src/plugin-main.cpp
   -DENABLE_FRONTEND_API=on \
   -DENABLE_QT=on
 
-# Hack Werror
-sed -i -e 's/ -Werror$//' %{__cmake_builddir}/CMakeFiles/plugin-support.dir/flags.make
-sed -i -e 's/ -Werror$//' %{__cmake_builddir}/CMakeFiles/distroav.dir/flags.make
 
 %cmake_build
 
