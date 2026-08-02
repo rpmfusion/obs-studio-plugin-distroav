@@ -1,6 +1,6 @@
 Name:           obs-studio-plugin-distroav
 Version:        6.2.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Network Audio/Video in OBS-Studio using NDI technology
 
 License:        GPL-2.0-or-later
@@ -66,6 +66,9 @@ sed -i -e 's|/usr/local/lib|/usr/local/%{_lib}|' src/plugin-main.cpp
 
 
 %changelog
+* Sun Aug 02 2026 RPM Fusion Release Engineering <leigh123linux@rpmfusion.org> - 6.2.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_45_Mass_Rebuild
+
 * Wed May 27 2026 Nicolas Chauvet <kwizart@gmail.com> - 6.2.1-1
 - Update to 6.2.1
 
